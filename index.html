@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<title>Nuestros Precios</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" href="themes/theme1/np_theme_1.min.css" />
+	<link rel="stylesheet" href="themes/theme1/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+
+	<script src="lib/jquery-1.10.2.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="lib/persistence/persistence.js"></script>
+	<script src="lib/persistence/persistence.store.sql.js"></script>
+	<script src="lib/persistence/persistence.store.websql.js"></script>
+	<script src="lib/persistence/persistence.store.memory.js"></script>
+	<script src="lib/persistence/persistence.jquery.js"></script>
+	<script src="lib/persistence/persistence.jquery.mobile.js"></script>
+
+	<script src="lib/database.js"></script>
+	<script src="lib/globals.js"></script>
+	<script src="controllers/login.js"></script>
+	<script src="controllers/companies.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="a" id="home">
+		<div data-role="panel" id="leftPanel" data-position="left" data-display="reveal">
+        	<ul data-role="listview" data-inset="true" data-theme="a">
+			  <li><a href="#login">Iniciar Sesion</a></li>
+			  <li><a href="#signin">Registrarse</a></li>
+			</ul>
+		</div>
+		<div data-role="header">
+		    <a href="#leftPanel" data-icon="bullets" style="margin-top:0.6%;"> Menu </a>
+		    <h1><img src="assets/img/logo.png" style="with:44px; height:44px"> Nuestros Precios</h1>
+		</div>
+		<div data-role="content">
+			<div id="companies"></div>
+		</div>
+	</div>
+
+	<div data-role="page" id="login">
+		<div data-role="header">
+			<a href="/" data-icon="back" data-rel="back">Atras</a>
+			<h1>Iniciar Sesion</h1>
+		</div>
+		<div data-role="content">
+			<form id="frmLogin" action="javascript:login()">
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <div class="ui-field-contain">
+							<input type="email" name="email" id="email" placeholder="Email" required>
+						</div>
+						<div class="ui-field-contain">
+							<input type="password" name="password" id="password" placeholder="Contraseña" required>
+						</div>
+                    </div>
+                    <input type="submit" data-theme="b" value="Enviar">
+                </fieldset>
+            </form>
+		</div>
+	</div>
+</body>
+</html>
