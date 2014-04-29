@@ -12,14 +12,14 @@
 	<script src="lib/jquery-1.10.2.min.js"></script>
 	<script src="lib/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	<script src="lib/persistence/persistence.js"></script>
-	<script src="lib/persistence/persistence.store.sql.js"></script>
 	<script src="lib/persistence/persistence.store.websql.js"></script>
-	<script src="lib/persistence/persistence.store.memory.js"></script>
-	<script src="lib/persistence/persistence.jquery.js"></script>
-	<script src="lib/persistence/persistence.jquery.mobile.js"></script>
+	<script src="lib/persistence/persistence.store.sql.js"></script>
 
 	<script src="lib/database.js"></script>
 	<script src="lib/globals.js"></script>
+
+	<script src="models/usuario.js"></script>
+
 	<script src="controllers/login.js"></script>
 	<script src="controllers/companies.js"></script>
 </head>
@@ -31,9 +31,18 @@
 			  <li><a href="#signin">Registrarse</a></li>
 			</ul>
 		</div>
+		<div data-role="panel" id="rightPanel" data-position="right" data-display="reveal">
+        	<ul data-role="listview" data-inset="true" data-theme="a">
+			  <li><a href="">Perfil</a></li>
+			  <li><a href="">Cerrar Sesion</a></li>
+			</ul>
+		</div>
 		<div data-role="header">
 		    <a href="#leftPanel" data-icon="bullets" style="margin-top:0.6%;"> Menu </a>
-		    <h1><img src="assets/img/logo.png" style="with:44px; height:44px"> Nuestros Precios</h1>
+		    <h1><img src="assets/img/logo.png" style="with:44px; height:44px" data-position="inline">
+		         <input data-position="inline" type="search" name="search-mini" id="search-mini" value="" data-mini="true" placeholder="Busqueda..." />  
+		    </h1>
+		    <a href="#rightPanel" data-icon="user" style="margin-top:0.6%; display:none; "> Usuario </a>
 		</div>
 		<div data-role="content">
 			<div id="companies"></div>

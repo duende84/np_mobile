@@ -1,4 +1,7 @@
 function login(){
+
+	var us = new usuario();
+
 	$.support.cors = true;
 	$.ajax({
 		url: BASE_URL + "/api/login",
@@ -8,6 +11,7 @@ function login(){
 		dataType:'json',
 		success: function (data) {
 			console.log(data)
+			us.registrarUsuario(data);
 		},
 		error: function (request,error) {
 			if(request.status == 200)
