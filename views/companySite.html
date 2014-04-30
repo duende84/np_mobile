@@ -4,27 +4,27 @@
 	<title>Nuestros Precios</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	<link rel="stylesheet" href="themes/theme1/np_theme_1.min.css" />
-	<link rel="stylesheet" href="themes/theme1/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="lib/jquery.mobile-1.4.2/jquery.mobile.structure-1.4.2.min.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
+	<link rel="stylesheet" href="../themes/theme1/np_theme_1.min.css" />
+	<link rel="stylesheet" href="../themes/theme1/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../lib/jquery.mobile-1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css" />
 
-	<script src="lib/jquery-1.10.2.min.js"></script>
-	<script src="lib/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
-	<script src="lib/persistence/persistence.js"></script>
-	<script src="lib/persistence/persistence.store.websql.js"></script>
-	<script src="lib/persistence/persistence.store.sql.js"></script>
+	<script src="../lib/jquery-1.10.2.min.js"></script>
+	<script src="../lib/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="../lib/persistence/persistence.js"></script>
+	<script src="../lib/persistence/persistence.store.websql.js"></script>
+	<script src="../lib/persistence/persistence.store.sql.js"></script>
 
-	<script src="lib/database.js"></script>
-	<script src="lib/globals.js"></script>
+	<script src="../lib/database.js"></script>
+	
 
-	<script src="models/usuario.js"></script>
+	<script src="../models/usuario.js"></script>
 
-	<script src="controllers/login.js"></script>
-	<script src="controllers/companies.js"></script>
+	<script src="../controllers/login.js"></script>
+	<script src="../controllers/companies.js"></script>
 </head>
 <body>
-	<<div data-role="page" data-theme="a" id="home">
+	<div data-role="page" data-theme="a" id="home">
 		<div data-role="panel" id="leftPanel" data-position="left" data-display="reveal">
         	<ul data-role="listview" data-inset="true" data-theme="a">
 			  <li><a href="#login">Iniciar Sesion</a></li>
@@ -43,7 +43,7 @@
 		    	<table style='width:100%'>
 		    		<tr>
     					<td width="38px">
-        					<img src="assets/img/logo.png" style="with:36px; height:36px; margin-top: 5px;"data-inline="true" >
+        					<img src="../assets/img/logo.png" style="with:36px; height:36px; margin-top: 5px;"data-inline="true" >
     					</td>
     					<td>
     				    	<input data-inline="true" type="search" name="search-mini" id="search-mini" value="" data-mini="true" placeholder="Busqueda..." data-inline="true"/>
@@ -59,7 +59,7 @@
 	</div>
 
 	<div data-role="page" id="login">
-		<div data-role="header" >
+		<div data-role="header">
 			<a href="/" data-icon="back" data-rel="back">Atras</a>
 			<h1>Iniciar Sesion</h1>
 		</div>
@@ -80,4 +80,3 @@
 		</div>
 	</div>
 </body>
-</html>
